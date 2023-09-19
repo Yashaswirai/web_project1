@@ -1,0 +1,234 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "General Sans";
+}
+html, body{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+}
+#circle{
+    position: relative;
+    width: 13px;
+    height: 13px;
+    background-color: white;
+    border-radius: 50%;
+    transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 0.8s;
+    z-index: 90000;
+}
+.bounding{
+    width: fit-content;
+    /* background-color: red; */
+    overflow: hidden;
+}
+.bounding .boundingelem{
+    transform: translateY(100%);
+}
+#main{
+    width: 100%;
+
+}
+#home{
+    width: 100%;
+    height: 100vh;
+    color: white;
+    background-color: black;
+    position: relative;
+}
+#nav{
+    width: 100%;
+    padding: 20px 40px;
+    font-size: 18px;
+    color: #ffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#nav a{
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+}
+#heading{
+    margin-top: 150px;
+
+}
+#heading h1{
+    margin-left: 2vw;
+    line-height: 0.8;
+    font-family: "General Sans Medium";
+    font-size: 10vw;
+    font-weight: 700;
+    opacity: .6;
+}
+#heading #secondh1{
+    margin-left: 12vw;
+}
+.blocktext{
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+.blocktext h5{
+    text-align: right;
+    text-transform: uppercase;
+    font-size: 17px;
+    line-height: 5;
+}
+.headingfreelance{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    margin-top: 100px;
+    padding-right: 50px;
+}
+.headingfreelance h4{
+    text-align: right;
+    text-transform: uppercase;
+    margin-top: 0.8vw;
+    font-size: 16px;
+}
+#homefooter{
+    padding: 0 2.8vw;
+    font-size: 0.8vw;
+    font-weight: 700;
+    position: absolute;
+    width: 100%;
+    bottom: 2.5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#homefooter a{
+    color: #ffff;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+#iconset{
+    display: flex;
+    gap: 5px;
+}
+#homefooter #circle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    color: black;
+    background-color: #888;
+}
+
+#second{
+    width: 100%;
+    height: 100vh;
+    padding-right: 10vw;
+    padding-left: 3vw;
+    padding-top: 15vw;
+    background-color: black;
+    /* color: white; */
+}
+.element{
+    position: relative;
+    width: 100%;
+    border-top: 1px solid #888;
+    color: white;
+    padding: 2vw 0.2vw;
+    opacity: .7;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#elemlast{
+    border-bottom: 1px solid #888;
+}
+.element h1{
+    font-size: 7vw;
+}
+.element h5{
+    font-size: 0.8vw;
+}
+.element img{
+    position: absolute;
+    z-index: 999;
+    height: 120%;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+#about{
+    width: 100%;
+    /* margin-top: 100px; */
+    padding: 15vw 10vw;
+    padding-left: 50vw;
+    color: white;
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    gap: 50px;
+}
+#about img{
+    width: 235px;
+    
+}
+#textabout{
+    width: 25rem;
+}
+#textabout h5{
+    text-transform: uppercase;
+    opacity: .7;
+    margin-bottom: 6px;
+}
+#textabout p{
+    line-height: 1.7;
+    font-size: 0.8vw;
+    font-weight: 500;
+    margin-bottom: 25px;
+}
+#textabout a{
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 8px 20px;
+    border-radius: 100px;
+}
+#subscribe{
+    color: white;
+    padding: 30px 50px;
+    line-height: 2;
+}
+#subscribe h5{
+    text-transform: uppercase;
+    opacity: .7;
+}
+#subscribe h3{
+    text-transform: uppercase;
+    font-size: 16px;
+}
+#footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 30px;
+    padding-bottom: 25px;
+    color: white;
+}
+#footerleft{
+    display: flex;
+    gap: 20px;
+}
+#footerright{
+    display: flex;
+    gap: 40px;
+}
+#footer a{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 14px;
+}
